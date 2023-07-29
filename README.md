@@ -1,2 +1,10 @@
-# reactjs-under-the-hood
-Ajay's personal LinkedIn Blog Website
+
+# <p align="center">ReactJS Under The Hood</p>
+  
+Personal Blog Website
+
+## 🙇 Author
+#### Ajay Pathak
+- LinkedIn: [@Ajay's LinkedIn](https://www.linkedin.com/in/ajay-pathak-webdeveloper/)
+        
+    
