@@ -39,7 +39,7 @@ async function main() {
             name: `Task ${i}`,
             ownerId: user.id,
             projectId: project.id,
-            description: `Everything that describes Task ${i}`,
+
             status: getRandomTaskStatus(),
           };
         }),
