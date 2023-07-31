@@ -15,6 +15,7 @@ const Hero = () => {
       <NavBar />
       <Separator />
       <Hero.Title title="ReactJS Under The Hood" />
+      <Hero.Title title="- Site Under Construction" />
       <Separator />
       <RecentBlogs />
       <AllBlogs />
