@@ -1,7 +1,9 @@
 "use client";
 
 import BlogListing from "@/components/BlogListing/BlogListing";
-import React from "react";
+import { blogData } from "@/services/blogs";
+import Image from "next/image";
+import React, { Fragment } from "react";
 
 type Props = {};
 
@@ -10,7 +12,22 @@ const RecentBlogs = (props: Props) => {
   return (
     <div>
       <BlogListing heading="Recent Blogs">
-        <>Hi</>
+        <>
+          {blogData.map((blog) => {
+            return (
+              <Fragment key={blog.id}>
+                <h5>{blog.heading}</h5>
+                <p>{blog.Content}</p>
+                <Image
+                  src={blog.imgSrc}
+                  alt={blog.heading}
+                  width={50}
+                  height={50}
+                />
+              </Fragment>
+            );
+          })}
+        </>
       </BlogListing>
     </div>
   );

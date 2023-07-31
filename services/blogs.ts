@@ -1,4 +1,4 @@
-const blogData = [
+export const blogData = [
   {
     id: "1",
     topics: ["react"],
@@ -51,6 +51,6 @@ setState, and dispatch are functions preserved by React hence they never trigger
 So the basic giveaway from here is the VALUES passed from CONTEXT, should be kept care of and bifurcated into different contexts if not fulfilling their purposes, i.e., are objects etc.
 `,
     recent: true,
-    imgSrc: `https://media.licdn.com/dms/image/D4D22AQEkxguyyzwdvA/feedshare-shrink_800/0/1689685868351?e=1693440000&v=beta&t=fpncxgiJaCrTDvpKNlZEL43x18dmUWM3-sFC1EkQRZg`,
+    imgSrc: "/../public/images/blog/01.jpeg",
   },
 ];
