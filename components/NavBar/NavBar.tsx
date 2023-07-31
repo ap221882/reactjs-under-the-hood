@@ -9,13 +9,11 @@ const NavHeader = () => {
 
 const NavLinks = () => {
   return (
-    <>
-      <ul>
-        {navConfig.map((navlink) => {
-          return <li key={navlink.id}>{navlink.title}</li>;
-        })}
-      </ul>
-    </>
+    <NavLinks.Wrapper>
+      {navConfig.map((navlink) => {
+        return <li key={navlink.id}>{navlink.title}</li>;
+      })}
+    </NavLinks.Wrapper>
   );
 };
 
@@ -30,6 +28,18 @@ const NavBar = () => {
 
 NavBar.Container = styled.div`
   padding: 0 5vw;
+  padding-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+`;
+
+NavLinks.Wrapper = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  & > li {
+  }
 `;
 
 export default NavBar;
