@@ -1,3 +1,4 @@
+"use client";
 import BlogListing from "@/components/BlogListing/BlogListing";
 import React from "react";
 
